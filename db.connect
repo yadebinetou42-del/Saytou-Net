@@ -1,0 +1,20 @@
+<style>
+    .deco{
+        display:flex;
+        justify-content:center;
+        font-weight:bold;
+    }
+</style>
+<?php
+$host = 'localhost';
+$dbname="infrastructures";
+$user = "root";
+$pass ="";
+try {
+$pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4",$user,$pass);
+$pdo->setAttribute(pdo::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+echo "<div class='deco'>Saytou-Net:connexion au SIEM établie</div>";
+}catch (PDOException $e) {
+    echo "Saytou-Net : le serveur de logs est innacessible.";
+}
+?>

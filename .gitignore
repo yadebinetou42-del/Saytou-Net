@@ -1,0 +1,11 @@
+.vs/
+# Ignorer les fichiers de configuration (contenant tes mots de passe)
+config.php
+db_connect.php
+
+# Ignorer les dossiers de VS Code
+.vscode/
+
+# Ignorer les fichiers système inutiles
+Thumbs.db
+*.log

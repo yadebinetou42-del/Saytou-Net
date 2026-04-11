@@ -1,0 +1,59 @@
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    color: blue;
+   
+}
+p{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:1px solid blue;
+    border-radius: 10px;
+    width:100%;
+    padding: 20px;
+}
+button{
+    background-color: aquamarine;
+    font-weight: bold;
+    border:1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+/* On cible les div qui sont dans le formulaire */
+form div {
+    display: flex;             
+    justify-content: space-between; /* Pousse le texte à gauche et l'input à droite */
+    align-items: center;       /* Aligne verticalement le texte et la case */
+    width: 100%;               /* Prend toute la largeur du formulaire */
+    margin-bottom: 15px;  /* Espace entre la ligne Identifiant et la ligne MDP */
+    padding: 20px;
+}
+/* Pour que les cases soient toutes de la même taille */
+form input {
+    font-weight: bold;
+    width: 200px;       /* Ajuste selon tes envies */
+    padding: 5px;    
+    border-radius: 5px;
+}
+label{
+    font-weight: bold;
+}
+a{
+    font-weight: bold;
+}
